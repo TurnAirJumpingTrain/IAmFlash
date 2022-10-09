@@ -1,63 +1,31 @@
-# 实验1_Android开发基础
+# 实验2_Android界面布局实验
 ## 实验内容
-### 注册GitHub账号，安装Git工具
-• 课程官方GitHub：https://github.com/fjnu-cse  
-• Git安装：https://git-scm.com/
-### 创建Android工程并同步至GitHub
-• 参考1：命令行方式，推荐
-http://blog.csdn.net/fjnu_se/article/details/66472625  
-• 参考2：Android Studio同步（不推荐）
-http://blog.csdn.net/fjnu_se/article/details/56683934  
-• Android工程的忽略文件
-• https://github.com/github/gitignore/blob/master/Android.gitignore  
-## 实验关键代码  
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.636" />
+学习官方文档：https://developer.android.google.cn/guide/topics/ui/declaring -layout.html
 
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="date"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38"
-        tools:ignore="SpeakableTextPresentCheck" />
+学习文档中关于ConstraintLayout, LinearLayout和TableLayout 的相关内容
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="我是闪电"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.219" />
+### Android布局实验——线性布局
+
+利用线性布局实现如下界面：
+
+### Android布局实验——表格布局
+
+利用表格布局实现如下界面：
+
+### Android布局实验——约束布局1
+利用ConstraintLayout实现如下界面：
+
+### Android布局实验——约束布局2
+利用ConstraintLayout实现如下界面，图片资源从群文件下载
+
+
 ## 实验结果
-![pic1](https://user-images.githubusercontent.com/113674466/192094289-0eccf615-1baf-47de-9f51-dbd50cc5a79b.PNG)
+![linear](https://user-images.githubusercontent.com/113674466/194739531-c452b5ef-9aa1-48ca-9492-705f175dfa1e.png)
+
+![table](https://user-images.githubusercontent.com/113674466/194739532-c1a386bb-f08b-418f-aeb7-fdd08efbe41d.png)
+
+![cal](https://user-images.githubusercontent.com/113674466/194739526-f573ae40-2969-4ed8-b546-75b6090203c4.png)
+
+![constraint](https://user-images.githubusercontent.com/113674466/194739528-a0dcaa43-a645-4c7d-9ab7-d5e34990da62.png)
+
