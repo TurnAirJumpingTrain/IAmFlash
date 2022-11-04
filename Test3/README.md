@@ -1,6 +1,6 @@
 # 实验3_Android界面组件  
 
-## Android ListView的用法  
+## 1.Android ListView的用法  
 ### 关键代码部分  
 ```java
         SimpleAdapter simpleAdapter=new SimpleAdapter(this,listItems,R.layout.simple_items,new String[]{"header","personName"},new int[]{R.id.imageView,R.id.name});
@@ -21,7 +21,8 @@
         });
 ```
 ### 截图  
-## 创建自定义布局的AlertDialog  
+![1](https://user-images.githubusercontent.com/113674466/200018391-0a5700fb-3506-4aff-88c1-e3f9203f559e.png)
+## 2.创建自定义布局的AlertDialog  
 ### 关键代码部分  
 ```java
     @Override
@@ -69,7 +70,8 @@
 </LinearLayout>
 ```
 ### 截图  
-## 使用XML定义菜单  
+![2](https://user-images.githubusercontent.com/113674466/200018407-935bb189-ea05-43b7-9cfe-2fd51709f730.png)
+## 3.使用XML定义菜单  
 ### 关键代码部分  
 ```java
     @Override
@@ -124,8 +126,11 @@
 </menu>
 ```
 ### 截图  
-
-## 创建上下文操作模式(ActionMode)的上下文菜单  
+![3](https://user-images.githubusercontent.com/113674466/200018416-ba99a556-242c-4de5-92eb-2d4fb2e23d84.png)
+![4](https://user-images.githubusercontent.com/113674466/200018423-771a2cbc-8013-47c4-9621-d1a36e3240bb.png)
+![5](https://user-images.githubusercontent.com/113674466/200018425-2b4b9952-8d9d-4a39-b64d-d9197ffb9143.png)
+![6](https://user-images.githubusercontent.com/113674466/200018429-e259fb96-dc6a-433c-9268-c8efd3689b39.png)
+## 4.创建上下文操作模式(ActionMode)的上下文菜单  
 ### 关键代码部分  
 ```java
         listView.setMultiChoiceModeListener(new AbsListView.MultiChoiceModeListener() {
@@ -201,3 +206,4 @@
 </menu>
 ```
 ### 截图  
+![7](https://user-images.githubusercontent.com/113674466/200018441-77a3b75d-1295-4265-839e-8dc12a90937d.png)
