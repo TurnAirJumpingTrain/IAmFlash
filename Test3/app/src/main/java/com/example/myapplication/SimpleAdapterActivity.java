@@ -3,7 +3,11 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,7 +28,24 @@ public class SimpleAdapterActivity extends AppCompatActivity {
             Map<String,Object> listItem=new HashMap<>();
             listItem.put("header",imgs[i]);
             listItem.put("personName",names[i]);
+            listItems.add(listItem);
         }
-        SimpleAdapter simpleAdapter=new SimpleAdapter(this,listItems,R.layout.simple_items,new String[]{"header","personName"},new )
+
+        SimpleAdapter simpleAdapter=new SimpleAdapter(this,listItems,R.layout.simple_items,new String[]{"header","personName"},new int[]{R.id.imageView,R.id.name});
+        ListView list=findViewById(R.id.mylist);
+        list.setAdapter(simpleAdapter);
+
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast toast=Toast.makeText(SimpleAdapterActivity.this,names[i],Toast.LENGTH_SHORT);
+                toast.show();
+                for (int num=0;num<adapterView.getCount();num++){
+                    View viewChildAt = adapterView.getChildAt(num);
+                    viewChildAt.setBackgroundResource(R.color.white);
+                }
+                view.setBackgroundResource(R.color.purple_200);
+            }
+        });
     }
 }
