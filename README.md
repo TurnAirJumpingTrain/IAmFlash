@@ -5,3 +5,5 @@
  test2  `实验2_Android界面布局实验`  
  
  test3  `实验3_Android界面组件实验`  
+
+ testMid  `期中实验_NotePad记事本应用`  
